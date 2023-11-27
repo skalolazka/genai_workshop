@@ -28,9 +28,8 @@ def science_tutoring(temperature: float = 0.2) -> None:
     response = chat.send_message(
         "How many planets are there in the solar system?", **parameters
     )
-    print(f"Response from Model: {response.text}")
+    return "Response from Model: " + str(response.text)
 
-    return response
 
 
 if __name__ == '__main__':
